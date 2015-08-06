@@ -30,7 +30,7 @@ public class ThreadScopeShareData {
 		public void get() {
 			int data = map.get(Thread.currentThread());
 			System.out.println("A from " + Thread.currentThread().getName()
-					+ " has put data " + data);
+					+ " get data " + data);
 		}
 	}
 
@@ -38,7 +38,7 @@ public class ThreadScopeShareData {
 		public void get() {
 			int data = map.get(Thread.currentThread());
 			System.out.println("B from " + Thread.currentThread().getName()
-					+ " has put data " + data);
+					+ " get data " + data);
 		}
 	}
 }
