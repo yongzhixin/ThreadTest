@@ -22,7 +22,7 @@ public class SemaphoreTest {
 							+ "进入,当前已有" + (3 - semaphore.availablePermits())
 							+ "个并发");
 					try {
-						Thread.sleep((long) Math.random() * 10000);
+						Thread.sleep((long) (Math.random() * 10000));
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}

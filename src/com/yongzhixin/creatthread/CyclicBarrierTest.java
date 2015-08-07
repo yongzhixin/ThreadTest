@@ -14,7 +14,7 @@ public class CyclicBarrierTest {
 				@Override
 				public void run() {
 					try {
-						Thread.sleep((long) Math.random() * 10000);
+						Thread.sleep((long) (Math.random() * 10000));
 						System.out
 								.println("线程"
 										+ Thread.currentThread().getName()
@@ -25,7 +25,7 @@ public class CyclicBarrierTest {
 												: "正在等候"));
 						cyclicBarrier.await();
 
-						Thread.sleep((long) Math.random() * 10000);
+						Thread.sleep((long) (Math.random() * 10000));
 						System.out
 								.println("线程"
 										+ Thread.currentThread().getName()
@@ -36,7 +36,7 @@ public class CyclicBarrierTest {
 												: "正在等候"));
 						cyclicBarrier.await();
 
-						Thread.sleep((long) Math.random() * 10000);
+						Thread.sleep((long) (Math.random() * 10000));
 						System.out
 								.println("线程"
 										+ Thread.currentThread().getName()
